@@ -48,6 +48,8 @@ There are two types of instructions files:
 
 > [!NOTE]
 > When working in your IDE, instructions files are only used for code generation in Copilot Chat, and not used for code completions or next edit suggestions.
+>
+> Copilot coding agent will utilize both repository and path instructions files when generating code.
 
 ## Use GitHub Copilot Chat before updating custom instructions
 
