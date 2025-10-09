@@ -149,7 +149,7 @@ As has been highlighted, one of the great advantages of GitHub Copilot coding ag
    - Before creating the PR, ensure all tests pass
    ```
 
-7. Note the level of guidance being provided to Copilot to help set everyone up for success. While Copilot could infer many of the points we added to the request, adding them in limits the assumptions which need to be made, driving better code generation.
+7. Note the level of guidance being provided to Copilot to help set everyone up for success. While Copilot could infer many of the points we added to the request, it helps to add them in explicitly. This limits the assumptions which need to be made, driving better code generation.
 8. Scroll towards the bottom of the dialog box to locate the **Assignee** button.
 9. Select **Assignee** to open the dialog box to select assignees.
 10. Select **Copilot** from the list.
