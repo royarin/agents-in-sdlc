@@ -9,8 +9,11 @@
         "devcontainer",
         "devcontainers",
         "docstrings",
+        "dotnettools",
         "isouter",
         "prebuild",
+        "pylance",
+        "schlich",
         "SDLC"
     ],
     "github.copilot.nextEditSuggestions.enabled": true,
