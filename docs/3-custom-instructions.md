@@ -7,7 +7,7 @@ Context is key across many aspects of life, and when working with generative AI.
 
 In this exercise, you will learn how to:
 
-- provide Copilot with project-specific context, coding guidelines and documentation standards using repository custom instructions **.github/copilot-instructions.md**.
+- provide Copilot with project-specific context, coding guidelines and documentation standards using [repository custom instructions](https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions) **.github/copilot-instructions.md**.
 - provide path instruction files to guide Copilot for repetitive or templated tasks on specific types of files.
 - implement both repository-wide instructions and task-specific instructions.
 
