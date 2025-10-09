@@ -31,7 +31,7 @@ Popular existing MCP servers include:
 
 - **[GitHub MCP Server][github-mcp-server]**: This server provides access to a set of APIs for managing your GitHub repositories. It allows the AI agent to perform actions such as creating new repositories, updating existing ones, and managing issues and pull requests.
 - **[Playwright MCP Server][playwright-mcp-server]**: This server provides browser automation capabilities using Playwright. It allows the AI agent to perform actions such as navigating to web pages, filling out forms, and clicking buttons.
-- **Additional reference servers**: There are many other MCP servers available that provide access to different tools and resources. Anthropic has [a list of MCP servers][anthropic-mcp-servers], including reference, third-party, and community implementations. 
+- **Additional reference servers**: There are many other MCP servers available that provide access to different tools and resources. GitHub hosts an [MCP registry][mcp-registry], listing including reference, third-party, and community implementations. 
 
 > [!IMPORTANT]
 > With regard to security, treat MCP servers as you would any other dependency in your project. Before using an MCP server, carefully review its source code, verify the publisher, and consider the security implications. Only use MCP servers that you trust and be cautious about granting access to sensitive resources or operations.
@@ -209,10 +209,9 @@ Notice that the setup process is similar to the GitHub MCP server, but you do no
 - [What the heck is MCP and why is everyone talking about it?][mcp-blog-post]
 - [GitHub MCP Server][github-mcp-server]
 - [Microsoft Playwright MCP Server][playwright-mcp-server]
-- [Anthropic MCP Servers][anthropic-mcp-servers]
+- [GitHub MCP Registry][mcp-registry]
 - [VS Code Extensions][vscode-extensions]
 - [GitHub Copilot Chat Extension][copilot-chat-extension]
-- [Creating a fine-grained personal access token][github-pat-docs]
 
 ---
 
@@ -225,9 +224,8 @@ Notice that the setup process is similar to the GitHub MCP server, but you do no
 [mcp-blog-post]: https://github.blog/ai-and-ml/llms/what-the-heck-is-mcp-and-why-is-everyone-talking-about-it/
 [github-mcp-server]: https://github.com/github/github-mcp-server
 [playwright-mcp-server]: https://github.com/microsoft/playwright-mcp
-[anthropic-mcp-servers]: https://github.com/modelcontextprotocol/servers
+[mcp-registry]: https://github.com/mcp
 [vscode-extensions]: https://code.visualstudio.com/docs/configure/extensions/extension-marketplace
 [copilot-chat-extension]: https://marketplace.visualstudio.com/items?itemName=GitHub.copilot
-[github-pat-docs]: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token
 [remote-github-mcp-server]: https://github.blog/changelog/2025-06-12-remote-github-mcp-server-is-now-available-in-public-preview/
 [vscode-mcp-config]: https://code.visualstudio.com/docs/copilot/chat/mcp-servers#_configuration-format
