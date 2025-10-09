@@ -44,4 +44,4 @@ Congratulations, you have created a copy of the lab repository! You also began t
 Since we've got a few minutes, let's get Copilot working on some tasks asynchronously for us! We can do this by [creating issues and assigning them to Copilot coding agent](./1-copilot-coding-agent.md).
 
 [codespaces]: https://github.com/features/codespaces
-[template-repository]: https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository
+[template-repository]: https://docs.github.com/repositories/creating-and-managing-repositories/creating-a-template-repository
