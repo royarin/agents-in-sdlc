@@ -189,8 +189,7 @@ As the list of games grows there will be a need for paging to be enabled. Using 
 ## Resources
 
 - [Coding agent 101][coding-agent-101]
-- [Copilot ask, edit, and agent modes: What they do and when to use them
-][choose-mode]
+- [Copilot ask, edit, and agent modes: What they do and when to use them][choose-mode]
 - [Agent mode in VS Code][vs-code-agent-mode]
 
 ---

@@ -7,9 +7,12 @@ Context is key across many aspects of life, and when working with generative AI.
 
 In this exercise, you will learn how to:
 
-- provide Copilot with project-specific context, coding guidelines and documentation standards using custom instructions **.github/copilot-instructions.md**.
-- use instruction files to guide Copilot for repetitive or templated tasks.
+- provide Copilot with project-specific context, coding guidelines and documentation standards using repository custom instructions **.github/copilot-instructions.md**.
+- provide path instruction files to guide Copilot for repetitive or templated tasks on specific types of files.
 - implement both repository-wide instructions and task-specific instructions.
+
+> [!NOTE]
+> There are other types of files which can be used to provide context or guidance to Copilot currently in preview. This workshop currently focused on generally available features.
 
 ## Scenario
 
@@ -40,7 +43,7 @@ Custom instructions allow you to provide context and preferences to Copilot chat
 
 There are two types of instructions files:
 
-- **.github/copilot-instructions.md**, a single instruction file sent to Copilot for **every** chat prompt. This file should contain project-level information, context which is relevant for every message. This could include the tech stack being used, an overview of what's being built, or global guidance for Copilot.
+- **.github/copilot-instructions.md**, a single instruction file sent to Copilot for **every** chat prompt for the repository. This file should contain project-level information, context which is relevant for most chat requests sent to Copilot. This could include the tech stack being used, an overview of what's being built and best practices, and other global guidance for Copilot.
 - **\*.instructions.md** files can be created for specific tasks or file types. You can use **.instructions.md** files to provide guidelines for particular languages (like Python or TypeScript), or for tasks like creating a React component or a new instance of a repository pattern.
 
 > [!NOTE]
@@ -69,9 +72,9 @@ To see the impact of custom instructions, we will start by sending a prompt with
 > [!IMPORTANT]
 > As highlighted previously, GitHub Copilot and LLM tools are probabilistic, not deterministic. As a result, the exact code generated may vary, and there's even a chance it'll abide by our rules without us spelling it out! But to aid consistency in code we should always document anything we want to ensure Copilot should understand about how we want our code generated.
 
-## Add global standards to copilot-instructions.md
+## Add repository standards to copilot-instructions.md
 
-As highlighted previously, `copilot-instructions.md` is designed to provide project-level information to Copilot. Let's ensure global coding standards are documented to improve code suggestions from Copilot chat.
+As highlighted previously, `copilot-instructions.md` is designed to provide project-level information to Copilot. Let's ensure repository coding standards are documented to improve code suggestions from Copilot chat.
 
 1. Return to your codespace.
 2. Open `.github/copilot-instructions.md`.
