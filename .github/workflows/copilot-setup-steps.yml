@@ -38,4 +38,4 @@ jobs:
 
       - name: Install Playwright
         working-directory: ./client
-        run: npx playwright init
+        run: npx playwright install
