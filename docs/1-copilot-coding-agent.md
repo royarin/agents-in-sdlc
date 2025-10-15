@@ -54,11 +54,11 @@ jobs:
       contents: read
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       # Backend setup - Python
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v6
         with:
           python-version: "3.13"
           cache: "pip"
@@ -68,7 +68,7 @@ jobs:
 
       # Frontend setup - Node.js
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: "22"
           cache: "npm"
