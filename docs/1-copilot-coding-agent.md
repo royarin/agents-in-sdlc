@@ -105,7 +105,7 @@ While every developer and organization understands the importance of documentati
 
   ![Assigning Copilot to an issue](images/ex4-issue-assign.png)
 
-10. Click somewhere else on the page to close the assignment window. Shortly after, you should see a set of 👀 on the first comment in the issue, indicating Copilot is on the job!
+10. Click somewhere else on the page to close the assignment window. Shortly after, you should see a set of 👀 on the issue description, indicating Copilot is on the job!
 
   ![Copilot uses the eyes emoji to indicate it's working on the issue](images/ex4-issue-eyes.png)
 
