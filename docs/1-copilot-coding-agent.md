@@ -49,8 +49,7 @@ jobs:
     runs-on: ubuntu-latest
     # Set the permissions to the lowest permissions possible needed for *your steps*. Copilot will be given its own token for its operations.
     permissions:
-      # If you want to clone the repository as part of your setup steps, for example to install dependencies, you'll need the `contents: read` permission.
-      # If you don't clone the repository in your setup steps, Copilot will do this for you automatically after the steps complete.
+      # If you want to clone the repository as part of your setup steps, for example to install dependencies, you'll need the `contents: read` permission. If you don't clone the repository in your setup steps, Copilot will do this for you automatically after the steps complete.
       contents: read
     steps:
       - name: Checkout code
@@ -77,6 +76,10 @@ jobs:
       - name: Install JavaScript dependencies
         working-directory: ./client
         run: npm ci
+
+      - name: Install Playwright
+        working-directory: ./client
+        run: npx playwright install
 ```
 
 It looks like any other GitHub workflow file, but it has a few key points:
