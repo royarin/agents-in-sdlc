@@ -54,11 +54,11 @@ jobs:
       contents: read
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       # Backend setup - Python
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v6
         with:
           python-version: "3.13"
           cache: "pip"
@@ -68,7 +68,7 @@ jobs:
 
       # Frontend setup - Node.js
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: "22"
           cache: "npm"
@@ -105,7 +105,7 @@ While every developer and organization understands the importance of documentati
 
   ![Assigning Copilot to an issue](images/ex4-issue-assign.png)
 
-10. Click somewhere else on the page to close the assignment window. Shortly after, you should see a set of 👀 on the first comment in the issue, indicating Copilot is on the job!
+10. Click somewhere else on the page to close the assignment window. Shortly after, you should see a set of 👀 on the issue description, indicating Copilot is on the job!
 
   ![Copilot uses the eyes emoji to indicate it's working on the issue](images/ex4-issue-eyes.png)
 
