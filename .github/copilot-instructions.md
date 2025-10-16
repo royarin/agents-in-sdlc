@@ -2,6 +2,10 @@
 
 This is a crowdfunding platform for games with a developer theme. The application uses a Flask backend API with SQLAlchemy ORM for database interactions, and an Astro/Svelte frontend with Tailwind CSS for styling. Please follow these guidelines when contributing:
 
+## Agent notes
+
+- Do not generate summary markdown files upon completion of a task
+
 ## Code standards
 
 ### Required Before Each Commit
