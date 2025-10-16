@@ -166,6 +166,9 @@ We want to create a new endpoint to list all publishers, and to follow the same 
    Create a new endpoint to return a list of all publishers. It should return the name and id for all publishers.
    ```
 
+> [!NOTE]
+> While the up-arrow shortcut to resend a prior command is handy, it will reset any context you might add as well. If you added in the instructions file as context, then use the up arrow, it will remove the instructions file. For this particular step, make sure you copy/paste (or type) the command to avoid accidentally removing context.
+
 14. Note the **References** section and how it uses the **flask-endpoint.instructions.md** file to provide context. If you use instructions files with Copilot agent mode, you will notice that Copilot explores and reads the files referenced in the instructions file.
 
    ![Screenshot of the references section, showing the included instructions file](./images/copilot-instructions-references.png)
