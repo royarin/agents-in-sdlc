@@ -160,4 +160,64 @@ We want to create a new endpoint to list all publishers, and to follow the same 
 
    ![Screenshot showing the instruction file being added into Copilot Chat](images/copilot-add-instructions-file.png)
 
-13. Send the same
+13. Send the same prompt as before to generate the desired endpoint:
+
+   ```plaintext
+   Create a new endpoint to return a list of all publishers. It should return the name and id for all publishers.
+   ```
+
+14. Note the **References** section and how it uses the **flask-endpoint.instructions.md** file to provide context. If you use instructions files with Copilot agent mode, you will notice that Copilot explores and reads the files referenced in the instructions file.
+
+   ![Screenshot of the references section, showing the included instructions file](./images/copilot-instructions-references.png)
+
+15. Copilot generates the files. Notice how it generates updates across multiple files, like **publishers.py** and **test_publishers.py**
+
+> [!NOTE]
+> Note that the code generated may diverge from some of the standards we set. AI tools like Copilot are non-deterministic, and may not always provide the same result. The other files in our codebase do not contain docstrings or comment headers, which could lead Copilot in another direction. Consistency is key, so making sure that your code follows the established patterns is important. You can always follow-up in chat and ask Copilot to follow your coding standards, which will help guide it in the right direction.
+
+16. After reviewing the code, select **Keep** in Copilot Chat to accept the changes.
+17. Open a terminal window by selecting <kbd>Ctl</kbd>+<kbd>\`</kbd>.
+18. Run the tests by running the script with the following command:
+
+   ```sh
+   ./scripts/run-server-tests.sh
+   ```
+
+19. Once the code is correct, and all tests pass, open the **Source Control** panel on the left of the Codespace and review the changes made by Copilot.
+20. Stage the changes by selecting the **+** icon in the **Source Control** panel.
+21. Generate a commit message using the **Sparkle** button.
+
+    ![Screenshot of the Source Control panel showing the changes made](images/source-control-changes.png)
+
+22. Commit the changes to your repository by selecting **Commit**.
+
+## Summary and next steps
+
+Congratulations! You explored how to ensure Copilot has the right context to generate code following the practices your organization has set forth. This can be done at a repository level with the **.github/copilot-instructions.md** file, or on a task basis with instruction files. You explored how to:
+
+- provide Copilot with project-specific context, coding guidelines and documentation standards using custom instructions (.github/copilot-instructions.md).
+- use instruction files to guide Copilot for repetitive or templated tasks.
+- implement both repository-wide instructions and task-specific instructions.
+
+Next we'll use [agent mode to add functionality to the site][next-lesson].
+
+## Resources
+
+- [Instruction files for GitHub Copilot customization][instruction-files]
+- [Best practices for creating custom instructions][instructions-best-practices]
+- [Personal custom instructions for GitHub Copilot][personal-instructions]
+
+---
+
+| [← Previous lesson: Model Context Protocol (MCP)][previous-lesson] | [Next lesson: Copilot agent mode →][next-lesson] |
+|:--|--:|
+
+[previous-lesson]: ./2-mcp.md
+[next-lesson]: ./4-copilot-agent-mode-vscode.md
+[instruction-files]: https://code.visualstudio.com/docs/copilot/copilot-customization
+[python-type-hints]: https://docs.python.org/3/library/typing.html
+[games-endpoints]: ../server/routes/games.py
+[games-tests]: ../server/tests/test_routes/test_games.py
+[instructions-best-practices]: https://docs.github.com/en/enterprise-cloud@latest/copilot/using-github-copilot/coding-agent/best-practices-for-using-copilot-to-work-on-tasks#adding-custom-instructions-to-your-repository
+[personal-instructions]: https://docs.github.com/en/copilot/customizing-copilot/adding-personal-custom-instructions-for-github-copilot
+
