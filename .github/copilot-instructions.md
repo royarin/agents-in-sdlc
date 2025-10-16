@@ -5,6 +5,7 @@ This is a crowdfunding platform for games with a developer theme. The applicatio
 ## Agent notes
 
 - Do not generate summary markdown files upon completion of a task
+- Always use absolute paths when running scripts and BASH commands
 
 ## Code standards
 
@@ -50,7 +51,6 @@ This is a crowdfunding platform for games with a developer theme. The applicatio
 ## Scripts
 
 - Several scripts exist in the `scripts` folder
-- Always use absolute paths when running scripts
 - Always use available scripts to perform tasks rather than performing operations manually
 - Existing scripts:
     - `scripts/setup-env.sh`: Performs installation of all Python and Node dependencies
