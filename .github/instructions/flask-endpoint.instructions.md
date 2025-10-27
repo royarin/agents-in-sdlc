@@ -1,3 +1,6 @@
+---
+applyTo: 'server/routes/*.py'
+---
 # Endpoint creation guidelines
 
 ## Endpoint notes
