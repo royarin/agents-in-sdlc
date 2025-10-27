@@ -66,7 +66,7 @@ This document provides mandatory guidelines for creating and maintaining project
 - Use fenced code blocks for code examples; include language identifiers.
 - Link to related internal docs and authoritative external resources.
 - Embed images/diagrams using Markdown. 
-- Use Mermaid where supported for embedded diagrams like flowcharts and sequence diagrams.
+- Use Mermaid for all supported embedded diagrams like flowcharts and sequence diagrams.
 - Ensure proper grammar and spelling.
 - Avoid emojis and informal language.
 

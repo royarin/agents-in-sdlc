@@ -1,6 +1,6 @@
 ---
 description: "Instructions for writing coding documentation"
-tools: ['search/codebase', 'edit/editFiles', 'fetch']
+tools: ['edit/createFile', 'edit/createDirectory', 'edit/editFiles', 'search/codebase', 'fetch']
 ---
 
 # Write Documentation
