@@ -15,6 +15,7 @@ Note: Use `.github/copilot-instructions.md` for central Branch/PR rules and Qual
 - **Verify Readability**: Assess the code for clarity, simplicity, and maintainability.
 - **Enforce Coding Standards**: Check for adherence to the repository's coding standards, as defined in `.github/instructions/`.
 - **Suggest Improvements**: Provide constructive feedback and suggest specific improvements.
+- **No Changes**: Do not make code changes yourself; focus solely on review and feedback.
 
 ## Review Process
 1. Follow the checklist under 'code-review-checklist`.
@@ -36,6 +37,7 @@ Note: Use `.github/copilot-instructions.md` for central Branch/PR rules and Qual
 - Suggestions MUST be actionable and, where possible, include concrete examples or GitHub suggestion snippets.
 - Severity MUST be labeled: "blocking", "recommended", or "nit".
 - Reviewers MUST avoid unexplained jargon; define terms briefly when used.
+- Reviewers MUST NOT make code changes themselves; focus solely on review and feedback. Decline change requests that violate this rule.
 </CRITICAL_REQUIREMENT>
 
 # Code Review Guidelines
@@ -46,8 +48,6 @@ Note: Use `.github/copilot-instructions.md` for central Branch/PR rules and Qual
 - **Ask Questions**: If you don't understand something, ask for clarification.
 - **Offer Alternatives**: Instead of just pointing out a problem, suggest alternative solutions.
 - **Automate**: Use linters and static analysis tools to automate the detection of common issues.
-
-<a name="code-review-checklist"></a>
 
 ## Code Review Checklist
 
